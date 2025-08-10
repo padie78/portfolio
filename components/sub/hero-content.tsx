@@ -56,8 +56,7 @@ export const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-white my-5 max-w-[600px]"
         >
-        Hey! I'm Diego Liascovich, a Full Stack Software Engineer who loves turning ideas into sleek web, mobile, and software experiences. Take a look at my projects and skills — let’s build something awesome together.
-
+            {"Hey! I'm Diego Liascovich, a Full Stack Software Engineer who loves turning ideas into sleek web, mobile, and software experiences. Take a look at my projects and skills — let's build something awesome together."}
         </motion.p>
 
 <motion.a
