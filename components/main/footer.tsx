@@ -21,7 +21,6 @@ export const Footer = () => {
                   rel="noreferrer noopener"
                   className="flex flex-row items-center my-[15px]"
                 >
-                  {Icon && <Icon />}
                   <span className="text-[15px] ml-[6px]">{name}</span>
                 </Link>
               ))}
