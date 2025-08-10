@@ -1,0 +1,68 @@
+{
+  "name": "diego-liascovich-portfolio",
+  "version": "1.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "author": {
+    "name": "Diego-Liascovich",
+    "email": "padie78@gmail.com",
+    "url": "https://github.com/padie78?tab=repositories"
+  },
+  "description": "Welcome to my full stack Diego Liascovich portfolio.",
+  "keywords": [
+    "Full Stack Developer",
+    "Frontend Developer",
+    "Backend Developer",
+    "Web Developer",
+    "portfolio",
+    "JavaScript Developer",
+    "Angular Developer",
+    "Node.js Developer",
+    ".NET Developer",
+    "Cloud Developer",
+    "Microservices Developer",
+    "REST API Developer",
+    "DevOps Engineer",
+    "Software Architecture",
+    "heroicons",
+    "Unit Testing",
+    "Database Developer",
+    "Software Engineer for Mobile Applications",
+    "Responsive Design",
+    "C# Developer",
+    "GraphQL API Developer",
+    "Clean Architecture" ],
+  "license": "MIT",  
+  "dependencies": {
+    "@heroicons/react": "^2.1.1",
+    "@react-three/drei": "^9.93.0",
+    "@react-three/fiber": "^8.15.13",
+    "clsx": "^2.1.0",
+    "framer-motion": "^10.18.0",
+    "next": "14.2.15",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.5.0",
+    "react-intersection-observer": "^9.5.3",
+    "react-simple-typewriter": "^5.0.1",
+    "swiper": "^11.2.10",
+    "tailwind-merge": "^2.2.0",
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}

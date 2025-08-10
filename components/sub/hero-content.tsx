@@ -1,0 +1,95 @@
+"use client";
+
+import { SparklesIcon } from "@heroicons/react/24/solid";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { Typewriter } from "react-simple-typewriter";
+
+import {
+  slideInFromLeft,
+  slideInFromRight,
+  slideInFromTop,
+} from "@/lib/motion";
+
+export const HeroContent = () => {
+  return (
+    <motion.div
+  initial="hidden"
+  animate="visible"
+  className="flex flex-col md:flex-row items-center justify-center px-6 md:px-20 mt-20 md:mt-40 w-full z-[20]"
+>
+
+      <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
+        <motion.div
+          variants={slideInFromTop}
+          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]]"
+        >
+          <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
+          <h1 className="Welcome-text text-[13px]">
+            Fullstack Developer Portfolio
+          </h1>
+        </motion.div>
+
+        <motion.h1
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2, ease: 'easeOut' }}
+          className="text-4xl md:text-6xl font-bold text-white"
+        >
+          Hello! I am{' '}
+          <span className="text-[rgba(255,89,243,1)]">
+  <Typewriter
+    words={['Creative', 'Curious', 'Motivated', 'Tech lover', 'Developer']}
+    loop={true}
+    cursor
+    cursorStyle="|"
+    typeSpeed={100}
+    deleteSpeed={60}
+    delaySpeed={2000}
+  />
+</span>
+
+     
+        </motion.h1>
+
+        <motion.p
+          variants={slideInFromLeft(0.8)}
+          className="text-lg text-white my-5 max-w-[600px]"
+        >
+        Hey! I'm Diego Liascovich, a Full Stack Software Engineer who loves turning ideas into sleek web, mobile, and software experiences. Take a look at my projects and skills — let’s build something awesome together.
+
+        </motion.p>
+
+<motion.a
+  href="/resume/Resume-Diego-Liascovich.pdf"
+  target="_blank"
+  rel="noreferrer noopener"
+  variants={slideInFromLeft(1)}
+  className="py-2 px-6 text-center text-white cursor-pointer rounded-lg max-w-[200px]
+             bg-gradient-to-r from-pink-500 to-fuchsia-600
+             shadow-md hover:shadow-pink-400/60
+             hover:scale-105 hover:brightness-110
+             transition-all duration-300 ease-in-out"
+>
+  My Resume
+</motion.a>
+
+      </div>
+
+      {/* Imagen del programador estilo cómic */}
+   <motion.div
+  variants={slideInFromRight(0.8)}
+  className="w-full md:w-[600px] h-auto flex justify-center items-center mt-10 md:mt-0"
+>
+  <Image
+    src="/me.png"
+    alt="Hero Image"
+    width={500}
+    height={500}
+    priority
+    className="object-contain w-full max-w-[500px] md:max-w-[600px] h-auto select-none"
+  />
+</motion.div>
+    </motion.div>
+  );
+};
