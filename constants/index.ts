@@ -1,4 +1,4 @@
-import { FaYoutube, FaFacebook } from "react-icons/fa";
+import { FaYoutube, FaFacebook, FaDev } from "react-icons/fa";
 import {
   RxDiscordLogo,
   RxGithubLogo,
@@ -94,8 +94,23 @@ export const SKILL_DATA = [
   },
 ] as const;
 
+
 export const SOCIALS = [
-  
+  {
+    name: "GitHub",
+    icon: RxGithubLogo,
+    link: "https://github.com/padie78?tab=repositories",
+  },
+  {
+    name: "Dev.to",
+    icon: FaDev,
+    link: "https://dev.to/padie78",
+  },
+  {
+    name: "Linkedin",
+    icon: RxLinkedinLogo,
+    link: "",
+  },
 ] as const;
 
 export const FRONTEND_SKILL = [
@@ -385,7 +400,7 @@ export const PROJECTS = [
    {
     title: "Summary Contractor IA",
     description:
-      '',
+      'Summary Contract is a web application designed to simplify the process of reviewing legal documents. It automatically analyzes contracts, identifies and summarizes key clauses, and delivers actionable recommendations to help users quickly understand potential risks, obligations, and opportunities. This approach reduces the time spent on manual contract review and supports more informed, confident decision-making.',
     image: "/projects/contract-1.png",
     link: "https://www.gov.il/en/service/connect-to-shaam",
     techIcons: [
@@ -399,27 +414,24 @@ export const PROJECTS = [
               ]
   },
     {
-    title: "Shaam",
+    title: "Aziva Oved Retirement Funds Platform",
     description:
-      '',
+      'Participated in the development of Aziva Oved Shaam App, a government tax service platform that helps retirees securely access and manage their accumulated funds. Users can choose among various pension fund (kupot) options and make informed decisions about their money, including handling severance payments (pitzutim). The app simplifies complex financial information, enhances transparency, and supports thousands of retirees in planning their financial future with confidence.',
     image: "/projects/shaam-1.png",
     link: "https://www.gov.il/en/service/connect-to-shaam",
     techIcons: [
                 { name: "", src: "/skills/angular.png" },
                 { name: "", src: "/skills/net.png" },
                 { name: "", src: "/skills/net-core.png" },
-                { name: "", src: "/skills/swagger.png" },
-                { name: "", src: "/skills/uml.png" },
-                { name: "", src: "/skills/figma.png" },                                
+                { name: "", src: "/skills/swagger.png" },                               
                 { name: "", src: "/skills/git.png" },
                 { name: "", src: "/skills/azure.png" },
 
               ]
   },
   {
-    title: "Coto Digital E-Commerce",
-    description:
-      '',
+    title: "Digital E-Commerce",
+    description: "Built and maintained the eCommerce platform for Coto Digital, working on a microservices-based architecture to ensure scalability, flexibility, and efficient deployment cycles. Designed and optimized solutions for product catalog, order processing, and inventory management, enabling seamless synchronization between services and real-time updates. Collaborated closely with cross-functional teams to enhance system performance, improve fault tolerance, and deliver a smooth, reliable shopping experience for thousands of daily users.",
     image: "/projects/coto-1.png",
     link: "https://www.cotodigital.com.ar/sitios/cdigi/nuevositio",
     techIcons: [
@@ -433,9 +445,9 @@ export const PROJECTS = [
               ]
   },
   {
-    title: "Corporate website development",
+    title: "Enterprise CRM Platform",
     description:
-      '',
+      'Engineered and supported the internal CRM system for Telecom Personal, a critical platform used by sales and customer service teams to manage user interactions, process requests, and enhance customer experience. Delivered scalable solutions integrating customer data, interaction history, and performance metrics, providing a 360-degree view of users and enabling informed decision-making. Worked closely with cross-functional teams to boost operational efficiency and ensure service continuity in a high-demand environment.',
     image: "/projects/personal-1.png",
     link: "https://www.personal.com.ar/",
         techIcons: [
@@ -446,24 +458,21 @@ export const PROJECTS = [
   {
     title: "Emotion-driven voice analysis solution",
     description:
-      "",
+      "Developed RISK-HR, an innovative solution leveraging emotional voice analysis to assess employee emotions, stress, and cognitive states through large-scale reliability assessments. The platform enables early detection of internal risks such as theft, fraud, and compliance breaches, allowing organizations to respond swiftly and mitigate potential financial, operational, and reputational damages. Contributed to designing scalable systems that support real-time analysis and risk monitoring, enhancing corporate security and workforce wellbeing.",
     image: "/projects/logical-1.png",
     link: "https://www.logicalcommander.com/en/risk-hr",
         techIcons: [
                 { name: "", src: "/skills/angular.png" },
                 { name: "", src: "/skills/node.png" },
                 { name: "", src: "/skills/aws.png" },
-                { name: "", src: "/skills/git.png" },
-                { name: "", src: "/skills/jest.png" },
-                { name: "", src: "/skills/postgresql.png" },
-                { name: "", src: "/skills/postman.png" },
+                { name: "", src: "/skills/git.png" }
               ]
 
   },
     {
-    title: "Tecpetrol",
+    title: "Cost Estimation and Management System for Oil Wells",
     description:
-      '',
+      'Developed a platform for managing and estimating costs of oil wells at Tecpetrol. The solution streamlined budgeting, tracking, and reporting processes, enabling more accurate cost control and resource allocation. Collaborated with engineering and finance teams to ensure the platform met operational requirements and improved decision-making efficiency in well management.',
     image: "/projects/tecpetrol-1.png",
     link: "https://example.com",
         techIcons: [
@@ -494,19 +503,19 @@ export const FOOTER_DATA = [
 
 export const NAV_LINKS = [
   {
-    title: "About me",
+    title: "ABOUT ME",
     link: "#about-me",
   },
   {
-    title: "Skills",
-    link: "#skills",
+    title: "TECH STACK",
+    link: "#stack",
   },
   {
-    title: "Projects",
+    title: "PROJECTS",
     link: "#projects",
   },
 ] as const;
 
 export const LINKS = {
-  sourceCode: "https://github.com/padie78?tab=repositories",
+  sourceCode: "",
 };

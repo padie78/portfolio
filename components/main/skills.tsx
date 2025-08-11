@@ -11,10 +11,17 @@ import {
   CLOUD_SKILL,
   DEVOPS_SKILL,
   LANGUAJES_SKILL,
-  TOOLS_SKILL,  
+  TOOLS_SKILL,
 } from "@/constants";
 
-type CategoryKey =  "Frontend" | "Backend" | "Database" | "Cloud" | "Devops" | "Languajes" | "Tools";
+type CategoryKey =
+  | "Frontend"
+  | "Backend"
+  | "Database"
+  | "Cloud"
+  | "Devops"
+  | "Languajes"
+  | "Tools";
 
 const categoryMap: Record<
   CategoryKey,
@@ -27,28 +34,28 @@ const categoryMap: Record<
 > = {
   Frontend: FRONTEND_SKILL,
   Backend: BACKEND_SKILL,
-  Database: DATABASE_SKILL,  
+  Database: DATABASE_SKILL,
   Cloud: CLOUD_SKILL,
   Devops: DEVOPS_SKILL,
   Languajes: LANGUAJES_SKILL,
-  Tools: TOOLS_SKILL,  
+  Tools: TOOLS_SKILL,
 };
 
 const categoryDescriptions: Record<CategoryKey, string> = {
   Frontend:
-    "",
+    "Technologies and frameworks focused on creating responsive, user-friendly interfaces and enriching user experiences in web and mobile applications.",
   Backend:
-    "",
+    "Server-side technologies that handle business logic, data processing, and API integrations to power applications efficiently and securely.",
   Database:
-    "",
+    "Systems and tools used for storing, retrieving, and managing structured and unstructured data, ensuring data integrity and scalability.",
   Cloud:
-    "",
+    "Cloud platforms and services that provide scalable infrastructure, deployment, and management solutions for modern applications.",
   Devops:
-    "",
+    "Tools and practices that enable continuous integration, delivery, and infrastructure automation to improve software development lifecycle efficiency.",
   Languajes:
-    "",
+    "Programming languages and syntaxes used to build applications, scripts, and tools across frontend, backend, and other domains.",
   Tools:
-    "",    
+    "Various utilities, editors, version control systems, and productivity software that support development and deployment workflows.",
 };
 
 export const Skills = () => {
@@ -59,8 +66,8 @@ export const Skills = () => {
     "Cloud",
     "Devops",
     "Languajes",
-    "Tools"
-    ];
+    "Tools",
+  ];
   const [activeTab, setActiveTab] = useState<CategoryKey>("Frontend");
   const [animating, setAnimating] = useState(false);
 
@@ -113,15 +120,11 @@ export const Skills = () => {
     "hover:shadow-pink-400/60 hover:scale-105 hover:brightness-110";
 
   return (
-
-    
     <section
-      id="skills"
-      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-20 md:py-60 bg-transparent"
+      id="stack"
+      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-10 md:py-60 bg-transparent"
     >
-      
-      
-      <h1 className="text-[40px] font-semibold text-[rgba(255,89,243,1)]">
+      <h1 className="text-[40px] font-semibold text-white">
         Tech Stack
       </h1>
       {/* Tabs */}
@@ -130,15 +133,15 @@ export const Skills = () => {
           <button
             key={category}
             onClick={() => handleTabClick(category)}
-            className={`${buttonBaseClasses} ${
-              activeTab === category ? "shadow-pink-500/90" : "opacity-70"
-            } ${buttonHoverClasses} min-w-[80px]`}
+            className={`${buttonBaseClasses} ${activeTab === category ? "shadow-pink-500/90" : "opacity-70"
+              } ${buttonHoverClasses} min-w-[80px] font-bold`}
             type="button"
             disabled={animating}
             aria-pressed={activeTab === category}
           >
             {category}
           </button>
+
         ))}
       </div>
 
@@ -154,7 +157,7 @@ export const Skills = () => {
 
       {/* Iconos con animación + blur */}
       <div
-        className={`flex flex-wrap justify-center gap-x-6 gap-y-6 md:gap-y-4 max-w-6xl px-4 z-10 relative transition-opacity`}
+        className={`flex flex-wrap justify-center gap-x-6 gap-y-0 md:gap-y-4 max-w-6xl px-4 z-10 relative transition-opacity`}
         style={{
           opacity: animating ? 0.1 : 1,
           transition: "opacity 0.6s cubic-bezier(0.25, 0.8, 0.25, 1)",
@@ -168,9 +171,9 @@ export const Skills = () => {
               initial={{ opacity: 0, y: 30, scale: 0.7, filter: "blur(10px)" }}
               animate={{ opacity: 1, y: 0, scale: 0.7, filter: "blur(0px)" }}
               transition={{
-                delay: i * 0.3,
-                duration: 0.5,
-                ease: "easeOut",
+                delay: i * 0.15,
+                duration: 0.35,
+                ease: "easeInOut",
               }}
               className="flex flex-col items-center cursor-pointer"
             >
@@ -181,7 +184,7 @@ export const Skills = () => {
                 height={Math.round(skill.height * 1)}
                 index={i}
               />
-              <span className="mt-1 text-white text-sm opacity-80">
+              <span className="mt-0.5 text-white text-sm opacity-80 md:mt-1">
                 {skill.skill_name}
               </span>
             </motion.div>
@@ -204,3 +207,4 @@ export const Skills = () => {
     </section>
   );
 };
+
