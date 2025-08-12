@@ -144,7 +144,7 @@ export const FRONTEND_SKILL = [
     width: 80,
     height: 80,
   },
-    {
+  {
     skill_name: "",
     image: "angular.png",
     width: 80,
@@ -197,13 +197,13 @@ export const BACKEND_SKILL = [
     height: 80,
   },
 
-    {
+  {
     skill_name: "",
     image: "nestjs.png",
     width: 80,
     height: 80,
   },
-{
+  {
     skill_name: "",
     image: "rabbit.png",
     width: 65,
@@ -228,7 +228,7 @@ export const BACKEND_SKILL = [
     width: 80,
     height: 80,
   },
-    {
+  {
     skill_name: "",
     image: "fastAPI.png",
     width: 80,
@@ -244,7 +244,7 @@ export const DATABASE_SKILL = [
     width: 40,
     height: 40,
   },
-    {
+  {
     skill_name: "",
     image: "redis.png",
     width: 80,
@@ -278,7 +278,7 @@ export const CLOUD_SKILL = [
     width: 80,
     height: 80,
   },
-    {
+  {
     skill_name: "",
     image: "firebase.png",
     width: 65,
@@ -291,25 +291,25 @@ export const CLOUD_SKILL = [
 
 
 export const DEVOPS_SKILL = [
-    {
+  {
     skill_name: "",
     image: "docker.png",
     width: 80,
     height: 80,
   },
-    {
+  {
     skill_name: "",
     image: "git.png",
     width: 65,
     height: 65,
   },
-      {
+  {
     skill_name: "",
     image: "docker-compose.png",
     width: 65,
     height: 65,
   },
-        {
+  {
     skill_name: "",
     image: "azure.png",
     width: 65,
@@ -368,25 +368,25 @@ export const TOOLS_SKILL = [
     width: 65,
     height: 65,
   },
-    {
+  {
     skill_name: "",
     image: "vs-code.png",
     width: 65,
     height: 65,
   },
-    {
+  {
     skill_name: "",
     image: "postman.png",
     width: 65,
     height: 65,
   },
-    {
+  {
     skill_name: "",
     image: "swagger.png",
     width: 65,
     height: 65,
   },
-      {
+  {
     skill_name: "",
     image: "jest.png",
     width: 65,
@@ -397,37 +397,50 @@ export const TOOLS_SKILL = [
 
 
 export const PROJECTS = [
-   {
+  {
+    title: "AI Chatbot with MCP Architecture",
+    description:
+      'Developed an AI-powered chatbot using an MCP architecture to coordinate multiple microservices and specialized tools. The chatbot leverages AI models like OpenAI GPT-4 and Claude (via OpenRouter) to understand natural language queries and decide dynamically which service to call, such as retrieving user data or orders. It provides human-like, friendly responses and supports real-time interaction through WebSockets. The modular design ensures scalability and easy addition of new tools and features.',    
+    image: "/projects/chatbot-1.png",
+    link: "",
+    techIcons: [
+      { name: "", src: "/skills/node.png" },
+      { name: "", src: "/skills/express.png" },
+      { name: "", src: "/skills/graphql.png" },            
+      { name: "", src: "/skills/git.png" },
+    ]
+  },
+  {
     title: "Summary Contractor IA",
     description:
       'Summary Contract is a web application designed to simplify the process of reviewing legal documents. It automatically analyzes contracts, identifies and summarizes key clauses, and delivers actionable recommendations to help users quickly understand potential risks, obligations, and opportunities. This approach reduces the time spent on manual contract review and supports more informed, confident decision-making.',
     image: "/projects/contract-1.png",
     link: "https://www.gov.il/en/service/connect-to-shaam",
     techIcons: [
-                { name: "", src: "/skills/flutter.png" },
-                { name: "", src: "/skills/nestjs.png" },
-                { name: "", src: "/skills/firebase.png" },
-                { name: "", src: "/skills/git.png" },
-                { name: "", src: "/skills/docker.png" },
-                { name: "", src: "/skills/docker-compose.png" },
-                
-              ]
+      { name: "", src: "/skills/flutter.png" },
+      { name: "", src: "/skills/nestjs.png" },
+      { name: "", src: "/skills/firebase.png" },
+      { name: "", src: "/skills/git.png" },
+      { name: "", src: "/skills/docker.png" },
+      { name: "", src: "/skills/docker-compose.png" },
+
+    ]
   },
-    {
+  {
     title: "Aziva Oved Retirement Funds Platform",
     description:
       'Participated in the development of Aziva Oved Shaam App, a government tax service platform that helps retirees securely access and manage their accumulated funds. Users can choose among various pension fund (kupot) options and make informed decisions about their money, including handling severance payments (pitzutim). The app simplifies complex financial information, enhances transparency, and supports thousands of retirees in planning their financial future with confidence.',
     image: "/projects/shaam-1.png",
     link: "https://www.gov.il/en/service/connect-to-shaam",
     techIcons: [
-                { name: "", src: "/skills/angular.png" },
-                { name: "", src: "/skills/net.png" },
-                { name: "", src: "/skills/net-core.png" },
-                { name: "", src: "/skills/swagger.png" },                               
-                { name: "", src: "/skills/git.png" },
-                { name: "", src: "/skills/azure.png" },
+      { name: "", src: "/skills/angular.png" },
+      { name: "", src: "/skills/net.png" },
+      { name: "", src: "/skills/net-core.png" },
+      { name: "", src: "/skills/swagger.png" },
+      { name: "", src: "/skills/git.png" },
+      { name: "", src: "/skills/azure.png" },
 
-              ]
+    ]
   },
   {
     title: "Digital E-Commerce",
@@ -435,14 +448,14 @@ export const PROJECTS = [
     image: "/projects/coto-1.png",
     link: "https://www.cotodigital.com.ar/sitios/cdigi/nuevositio",
     techIcons: [
-                { name: "", src: "/skills/angular.png" },
-                { name: "", src: "/skills/node.png" },
-                { name: "", src: "/skills/net.png" },                
-                { name: "", src: "/skills/git.png" },
-                { name: "", src: "/skills/sql-server.png" },
-                { name: "", src: "/skills/docker.png" },
+      { name: "", src: "/skills/angular.png" },
+      { name: "", src: "/skills/node.png" },
+      { name: "", src: "/skills/net.png" },
+      { name: "", src: "/skills/git.png" },
+      { name: "", src: "/skills/sql-server.png" },
+      { name: "", src: "/skills/docker.png" },
 
-              ]
+    ]
   },
   {
     title: "Enterprise CRM Platform",
@@ -450,10 +463,10 @@ export const PROJECTS = [
       'Engineered and supported the internal CRM system for Telecom Personal, a critical platform used by sales and customer service teams to manage user interactions, process requests, and enhance customer experience. Delivered scalable solutions integrating customer data, interaction history, and performance metrics, providing a 360-degree view of users and enabling informed decision-making. Worked closely with cross-functional teams to boost operational efficiency and ensure service continuity in a high-demand environment.',
     image: "/projects/personal-1.png",
     link: "https://www.personal.com.ar/",
-        techIcons: [
-                { name: "", src: "/skills/net.png" },
-                { name: "", src: "/skills/sql-server.png" },
-              ]
+    techIcons: [
+      { name: "", src: "/skills/net.png" },
+      { name: "", src: "/skills/sql-server.png" },
+    ]
   },
   {
     title: "Emotion-driven voice analysis solution",
@@ -461,24 +474,24 @@ export const PROJECTS = [
       "Developed RISK-HR, an innovative solution leveraging emotional voice analysis to assess employee emotions, stress, and cognitive states through large-scale reliability assessments. The platform enables early detection of internal risks such as theft, fraud, and compliance breaches, allowing organizations to respond swiftly and mitigate potential financial, operational, and reputational damages. Contributed to designing scalable systems that support real-time analysis and risk monitoring, enhancing corporate security and workforce wellbeing.",
     image: "/projects/logical-1.png",
     link: "https://www.logicalcommander.com/en/risk-hr",
-        techIcons: [
-                { name: "", src: "/skills/angular.png" },
-                { name: "", src: "/skills/node.png" },
-                { name: "", src: "/skills/aws.png" },
-                { name: "", src: "/skills/git.png" }
-              ]
+    techIcons: [
+      { name: "", src: "/skills/angular.png" },
+      { name: "", src: "/skills/node.png" },
+      { name: "", src: "/skills/aws.png" },
+      { name: "", src: "/skills/git.png" }
+    ]
 
   },
-    {
+  {
     title: "Cost Estimation and Management System for Oil Wells",
     description:
       'Developed a platform for managing and estimating costs of oil wells at Tecpetrol. The solution streamlined budgeting, tracking, and reporting processes, enabling more accurate cost control and resource allocation. Collaborated with engineering and finance teams to ensure the platform met operational requirements and improved decision-making efficiency in well management.',
     image: "/projects/tecpetrol-1.png",
     link: "https://example.com",
-        techIcons: [
-                { name: "", src: "/skills/net.png" },
-                { name: "", src: "/skills/sql-server.png" },
-              ]
+    techIcons: [
+      { name: "", src: "/skills/net.png" },
+      { name: "", src: "/skills/sql-server.png" },
+    ]
 
   }
 ] as const;
