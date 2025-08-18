@@ -27,8 +27,4 @@ export const siteConfig: Metadata = {
     "GraphQL API Developer",
     "Clean Architecture"  
   ] as Array<string>,
-  authors: {
-    name: "Sanidhya Kumar Verma",
-    url: "https://github.com/sanidhyy",
-  },
 } as const;
