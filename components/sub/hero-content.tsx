@@ -22,27 +22,26 @@ export const HeroContent = () => {
       <div className="h-full w-full flex flex-col gap-5 mt-10 justify-center m-auto text-start">
 
 
-        <motion.h1
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 2, ease: 'easeOut' }}
-          className="text-4xl md:text-6xl font-bold text-white"
-        >
-          Hi! I am{' '}
-          <span className="text-[rgba(0,255,0,1)]">
-            <Typewriter
-              words={['Creative', 'Curious', 'Motivated', 'Proactive', 'Cooperative', 'Analytical', 'Developer']}
-              loop={true}
-              cursor
-              cursorStyle="|"
-              typeSpeed={100}
-              deleteSpeed={60}
-              delaySpeed={2000}
-            />
-          </span>
+      <motion.h1
+  initial={{ opacity: 0, y: -50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 2, ease: 'easeOut' }}
+  className="text-2xl md:text-6xl font-bold text-white"
+>
+  Hi! I am{' '}
+  <span className="text-[rgba(0,255,0,1)]">
+    <Typewriter
+      words={['Creative', 'Curious', 'Motivated', 'Proactive', 'Tech lover', 'Cooperative', 'Analytical', 'Developer']}
+      loop={true}
+      cursor
+      cursorStyle="|"
+      typeSpeed={100}
+      deleteSpeed={60}
+      delaySpeed={2000}
+    />
+  </span>
+</motion.h1>
 
-
-        </motion.h1>
 
         <motion.p
           variants={slideInFromLeft(0.8)}
