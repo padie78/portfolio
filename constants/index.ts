@@ -394,13 +394,44 @@ export const TOOLS_SKILL = [
   },
 ];
 
-
+export const ARTICLES = [
+  {
+    title: "🔐 Secure Web Application Flow with JWT: From Frontend to Backend",
+    description:
+      'A practical guide on implementing JWT authentication to secure web applications. Covers generating, storing, and validating tokens, managing user sessions, and protecting data across frontend and backend, ensuring safe and efficient communication.',    
+    image: "/articles/article-1.png",
+    link: "https://dev.to/padie78/secure-web-application-flow-with-jwt-from-frontend-to-backend-1obl",
+    techIcons: [
+     
+    ]
+  },
+  {
+    title: "🏗️ Real-World Backend Architecture Patterns You Should Know",
+    description:
+          'Studied and applied real-world backend architecture patterns, focusing on scalability, maintainability, and performance. Gained hands-on experience with microservices, event-driven design, and modular backend structures to build robust and extensible applications.', 
+    image: "/articles/article-2.png",
+    link: "https://dev.to/padie78/real-world-backend-architecture-patterns-you-should-know-17kd",
+    techIcons: [
+    
+    ]
+  },
+  {
+    title: "🧬 Scalable Angular Architecture with Atomic Design and BEM",
+    description:
+          'Developed a scalable Angular application using Atomic Design principles and BEM methodology, ensuring modularity, maintainability, and reusable components across the project. Implemented a clear folder structure and naming conventions to streamline development and facilitate team collaboration.', 
+    image: "/articles/article-3.png",
+    link: "https://dev.to/padie78/scalable-angular-architecture-with-atomic-design-and-bem-1hic",
+    techIcons: [
+      
+    ]
+  }
+]
 
 export const PROJECTS = [
   {
     title: "AI Chatbot with MCP Architecture",
     description:
-      'Developed an AI-powered chatbot using an MCP architecture to coordinate multiple microservices and specialized tools. The chatbot leverages AI models like OpenAI GPT-4 and Claude (via OpenRouter) to understand natural language queries and decide dynamically which service to call, such as retrieving user data or orders. It provides human-like, friendly responses and supports real-time interaction through WebSockets. The modular design ensures scalability and easy addition of new tools and features.',    
+      'AI-powered chatbot using MCP architecture to coordinate multiple microservices. Leverages GPT-4 and Claude (via OpenRouter) for natural language queries, dynamically calling services like user data or orders. Provides human-like responses and real-time interaction via WebSockets, with a modular, scalable design.',    
     image: "/projects/chatbot-1.png",
     link: "",
     techIcons: [
@@ -413,7 +444,7 @@ export const PROJECTS = [
   {
     title: "Summary Contractor IA",
     description:
-      'Summary Contract is a web application designed to simplify the process of reviewing legal documents. It automatically analyzes contracts, identifies and summarizes key clauses, and delivers actionable recommendations to help users quickly understand potential risks, obligations, and opportunities. This approach reduces the time spent on manual contract review and supports more informed, confident decision-making.',
+      'Summary Contract is a web app that simplifies legal document review. It automatically analyzes contracts, extracts key clauses, and provides actionable insights, helping users quickly understand risks, obligations, and opportunities while reducing manual review time.',
     image: "/projects/contract-1.png",
     link: "https://www.gov.il/en/service/connect-to-shaam",
     techIcons: [
@@ -429,7 +460,7 @@ export const PROJECTS = [
   {
     title: "Aziva Oved Retirement Funds Platform",
     description:
-      'Participated in the development of Aziva Oved Shaam App, a government tax service platform that helps retirees securely access and manage their accumulated funds. Users can choose among various pension fund (kupot) options and make informed decisions about their money, including handling severance payments (pitzutim). The app simplifies complex financial information, enhances transparency, and supports thousands of retirees in planning their financial future with confidence.',
+      'Contributed to the development of Aziva Oved Shaam, a government tax platform for retirees. The app enables secure access to pension funds, manages severance payments, and simplifies complex financial data, helping thousands make informed decisions and plan their financial future confidently.',
     image: "/projects/shaam-1.png",
     link: "https://www.gov.il/en/service/connect-to-shaam",
     techIcons: [
@@ -444,7 +475,7 @@ export const PROJECTS = [
   },
   {
     title: "Digital E-Commerce",
-    description: "Built and maintained the eCommerce platform for Coto Digital, working on a microservices-based architecture to ensure scalability, flexibility, and efficient deployment cycles. Designed and optimized solutions for product catalog, order processing, and inventory management, enabling seamless synchronization between services and real-time updates. Collaborated closely with cross-functional teams to enhance system performance, improve fault tolerance, and deliver a smooth, reliable shopping experience for thousands of daily users.",
+    description: "Built and maintained Coto Digital’s eCommerce platform using a microservices architecture for scalability and efficiency. Designed solutions for product catalog, orders, and inventory with real-time updates. Collaborated with cross-functional teams to ensure performance, reliability, and a seamless shopping experience.",
     image: "/projects/coto-1.png",
     link: "https://www.cotodigital.com.ar/sitios/cdigi/nuevositio",
     techIcons: [
@@ -460,7 +491,7 @@ export const PROJECTS = [
   {
     title: "Enterprise CRM Platform",
     description:
-      'Engineered and supported the internal CRM system for Telecom Personal, a critical platform used by sales and customer service teams to manage user interactions, process requests, and enhance customer experience. Delivered scalable solutions integrating customer data, interaction history, and performance metrics, providing a 360-degree view of users and enabling informed decision-making. Worked closely with cross-functional teams to boost operational efficiency and ensure service continuity in a high-demand environment.',
+      'Engineered and supported Telecom Personal’s internal CRM, enabling sales and support teams to manage user interactions and requests. Delivered scalable solutions integrating customer data and performance metrics for a 360° user view. Collaborated with cross-functional teams to improve efficiency and ensure service continuity.',
     image: "/projects/personal-1.png",
     link: "https://www.personal.com.ar/",
     techIcons: [
@@ -471,7 +502,7 @@ export const PROJECTS = [
   {
     title: "Emotion-driven voice analysis solution",
     description:
-      "Developed RISK-HR, an innovative solution leveraging emotional voice analysis to assess employee emotions, stress, and cognitive states through large-scale reliability assessments. The platform enables early detection of internal risks such as theft, fraud, and compliance breaches, allowing organizations to respond swiftly and mitigate potential financial, operational, and reputational damages. Contributed to designing scalable systems that support real-time analysis and risk monitoring, enhancing corporate security and workforce wellbeing.",
+      "Developed RISK-HR, a platform using emotional voice analysis to assess employee stress and cognitive states. Enabled early detection of risks like theft, fraud, and compliance breaches. Designed scalable systems for real-time analysis and monitoring, improving corporate security and workforce wellbeing.",
     image: "/projects/logical-1.png",
     link: "https://www.logicalcommander.com/en/risk-hr",
     techIcons: [
@@ -485,7 +516,7 @@ export const PROJECTS = [
   {
     title: "Cost Estimation and Management System for Oil Wells",
     description:
-      'Developed a platform for managing and estimating costs of oil wells at Tecpetrol. The solution streamlined budgeting, tracking, and reporting processes, enabling more accurate cost control and resource allocation. Collaborated with engineering and finance teams to ensure the platform met operational requirements and improved decision-making efficiency in well management.',
+      'Developed a platform at Tecpetrol for managing and estimating oil well costs, streamlining budgeting, tracking, and reporting. Improved cost control and resource allocation while collaborating with engineering and finance teams to enhance operational decision-making.',
     image: "/projects/tecpetrol-1.png",
     link: "https://example.com",
     techIcons: [
@@ -526,6 +557,10 @@ export const NAV_LINKS = [
   {
     title: "PROJECTS",
     link: "#projects",
+  },
+    {
+    title: "ARTICLES",
+    link: "#articles",
   },
 ] as const;
 

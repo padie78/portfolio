@@ -8,7 +8,7 @@ type TechIcon = {
   height?: number;
 };
 
-type ProjectCardProps = {
+type ArticleCardProps = {
   src: string;
   title: string;
   description: string;
@@ -16,13 +16,13 @@ type ProjectCardProps = {
   techIcons?: TechIcon[];
 };
 
-export const ProjectCard = ({
+export const ArticleCard = ({
   src,
   title,
   description,
   link,
   techIcons = [],
-}: ProjectCardProps) => {
+}: ArticleCardProps) => {
   return (
     <Link
       href={link}

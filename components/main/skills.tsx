@@ -114,15 +114,15 @@ export const Skills = () => {
   }, [activeTab, animating]);
 
   const buttonBaseClasses =
-    "py-2 px-4 text-center text-white cursor-pointer rounded-lg bg-gradient-to-r from-pink-500 to-fuchsia-600 shadow-md transition-all duration-300 ease-in-out";
+  "py-2 px-4 text-center text-black cursor-pointer rounded-lg shadow-md transition-all duration-300 ease-in-out";
 
-  const buttonHoverClasses =
-    "hover:shadow-pink-400/60 hover:scale-105 hover:brightness-110";
+const buttonHoverClasses =
+  "hover:shadow-green-400/60 hover:scale-105 hover:brightness-110";
 
   return (
     <section
       id="stack"
-      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-10 md:py-60 bg-transparent"
+      className="flex flex-col items-center justify-center gap-5 h-full relative overflow-hidden py-10 bg-transparent"
     >
       <h1 className="text-[40px] font-semibold text-white">
         Tech Stack
@@ -133,14 +133,15 @@ export const Skills = () => {
           <button
             key={category}
             onClick={() => handleTabClick(category)}
-            className={`${buttonBaseClasses} ${activeTab === category ? "shadow-pink-500/90" : "opacity-70"
-              } ${buttonHoverClasses} min-w-[80px] font-bold`}
+            className={`${buttonBaseClasses} ${activeTab === category ? "shadow-green-400/90" : "opacity-70"} ${buttonHoverClasses} min-w-[80px] font-bold`}
             type="button"
             disabled={animating}
             aria-pressed={activeTab === category}
+            style={{ backgroundColor: "rgba(0,255,0,1)" }}
           >
             {category}
           </button>
+
 
         ))}
       </div>

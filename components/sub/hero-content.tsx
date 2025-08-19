@@ -22,7 +22,7 @@ export const HeroContent = () => {
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
           variants={slideInFromTop}
-          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]]"
+          className="Welcome-box py-[8px] px-[7px] border border-[rgba(0,255,0,1)] opacity-[0.9]]"
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
@@ -37,7 +37,7 @@ export const HeroContent = () => {
           className="text-4xl md:text-6xl font-bold text-white"
         >
           Hello! I am{' '}
-          <span className="text-[rgba(255,89,243,1)]">
+          <span className="text-[rgba(0,255,0,1)]">
             <Typewriter
               words={['Creative', 'Curious', 'Motivated', 'Proactive', 'Tech lover', 'Cooperative', 'Analytical', 'Developer']}
               loop={true}
@@ -58,20 +58,22 @@ export const HeroContent = () => {
         >
           {"Hey! I'm Diego Liascovich, a Full Stack Software Engineer who loves turning ideas into sleek web, mobile, and software experiences. Take a look at my projects and skills."}
         </motion.p>
+<motion.a
+  href="/resume/Resume-Diego-Liascovich.pdf"
+  target="_blank"
+  rel="noreferrer noopener"
+  variants={slideInFromLeft(1)}
+  className="py-2 px-6 text-center cursor-pointer rounded-lg max-w-[200px]
+             shadow-md hover:shadow-green-400/60
+             hover:scale-105 hover:brightness-110
+             transition-all duration-300 ease-in-out
+             font-bold"
+  style={{ backgroundColor: "rgba(0,255,0,0.8)", color: "black" }}
+>
+  My Resume
+</motion.a>
 
-        <motion.a
-          href="/resume/Resume-Diego-Liascovich.pdf"
-          target="_blank"
-          rel="noreferrer noopener"
-          variants={slideInFromLeft(1)}
-          className="py-2 px-6 text-center text-white cursor-pointer rounded-lg max-w-[200px]
-                      bg-gradient-to-r from-pink-500 to-fuchsia-600
-                      shadow-md hover:shadow-pink-400/60
-                      hover:scale-105 hover:brightness-110
-                      transition-all duration-300 ease-in-out
-                      font-bold">
-          My Resume
-        </motion.a>
+
 
 
       </div>
