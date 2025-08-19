@@ -19,16 +19,8 @@ export const HeroContent = () => {
       className="flex flex-col md:flex-row items-center justify-center px-6 md:px-20 mt-20 md:mt-40 w-full z-[20]"
     >
 
-      <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
-        <motion.div
-          variants={slideInFromTop}
-          className="Welcome-box py-[8px] px-[7px] border border-[rgba(0,255,0,1)] opacity-[0.9]]"
-        >
-          <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-          <h1 className="Welcome-text text-[13px]">
-            Fullstack Developer Portfolio
-          </h1>
-        </motion.div>
+      <div className="h-full w-full flex flex-col gap-5 mt-10 justify-center m-auto text-start">
+
 
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
@@ -36,10 +28,10 @@ export const HeroContent = () => {
           transition={{ duration: 2, ease: 'easeOut' }}
           className="text-4xl md:text-6xl font-bold text-white"
         >
-          Hello! I am{' '}
+          Hi! I am{' '}
           <span className="text-[rgba(0,255,0,1)]">
             <Typewriter
-              words={['Creative', 'Curious', 'Motivated', 'Proactive', 'Tech lover', 'Cooperative', 'Analytical', 'Developer']}
+              words={['Creative', 'Curious', 'Motivated', 'Proactive', 'Cooperative', 'Analytical', 'Developer']}
               loop={true}
               cursor
               cursorStyle="|"
@@ -58,20 +50,20 @@ export const HeroContent = () => {
         >
           {"Hey! I'm Diego Liascovich, a Full Stack Software Engineer who loves turning ideas into sleek web, mobile, and software experiences. Take a look at my projects and skills."}
         </motion.p>
-<motion.a
-  href="/resume/Resume-Diego-Liascovich.pdf"
-  target="_blank"
-  rel="noreferrer noopener"
-  variants={slideInFromLeft(1)}
-  className="py-2 px-6 text-center cursor-pointer rounded-lg max-w-[200px]
+        <motion.a
+          href="/resume/Resume-Diego-Liascovich.pdf"
+          target="_blank"
+          rel="noreferrer noopener"
+          variants={slideInFromLeft(1)}
+          className="py-2 px-6 text-center cursor-pointer rounded-lg max-w-[200px]
              shadow-md hover:shadow-green-400/60
              hover:scale-105 hover:brightness-110
              transition-all duration-300 ease-in-out
              font-bold"
-  style={{ backgroundColor: "rgba(0,255,0,0.8)", color: "black" }}
->
-  My Resume
-</motion.a>
+          style={{ backgroundColor: "rgba(0,255,0,0.8)", color: "black" }}
+        >
+          My Resume
+        </motion.a>
 
 
 
