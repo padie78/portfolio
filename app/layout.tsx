@@ -10,6 +10,7 @@ import { siteConfig } from "@/config";
 import { cn } from "@/lib/utils";
 
 import "./globals.css";
+import ConvAIWidget from "@/components/main/convAIWidget";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,6 +37,9 @@ export default function RootLayout({ children }: PropsWithChildren) {
             <Footer />
           </>
         )}
+     
+          <ConvAIWidget agentId="agent_1001k5p1n8qqede9kejyepk9mm95" />
+
       </body>
     </html>
   );
