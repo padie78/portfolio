@@ -8,7 +8,7 @@ interface ConvAIWidgetProps {
   right?: number;
 }
 
-export default function ConvAIWidget({ agentId, bottom = 20, right = 20 }: ConvAIWidgetProps) {
+export default function ConvAIWidget({ agentId, bottom = 10, right = 10 }: ConvAIWidgetProps) {
   const widgetRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
